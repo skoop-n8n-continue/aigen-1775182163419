@@ -1,0 +1,158 @@
+{
+  "app_id": "aigen-1775182163419",
+  "document_version": 1,
+  "sections": {
+    "storefront": {
+      "hotel_name": {
+        "type": "text",
+        "label": "Hotel Name",
+        "value": "GRAND LUMIÈRE"
+      },
+      "guest_name": {
+        "type": "text",
+        "label": "Guest Name",
+        "value": "Mr. Raul Jung"
+      },
+      "location": {
+        "type": "text",
+        "label": "Location",
+        "value": "Paris, FR"
+      },
+      "background_image": {
+        "type": "file",
+        "label": "Background Image",
+        "value": "assets/hotel_background-1775182275330.png",
+        "meta": {
+          "accepted_formats": ["png", "jpg", "webp"],
+          "path": "assets/"
+        }
+      }
+    },
+    "app_settings": {
+      "primary_color": {
+        "type": "color",
+        "label": "Primary Color",
+        "value": "#00b7af"
+      },
+      "background_dark": {
+        "type": "color",
+        "label": "Background Dark",
+        "value": "#10181f"
+      },
+      "card_bg_opacity": {
+        "type": "number",
+        "label": "Card Background Opacity",
+        "value": 0.08,
+        "meta": { "format": "percentage" }
+      }
+    },
+    "navigation": {
+      "type": "collection",
+      "label": "Navigation Items",
+      "item_schema": {
+        "id": { "type": "text", "label": "ID" },
+        "label": { "type": "text", "label": "Label" },
+        "active": { "type": "boolean", "label": "Is Active" }
+      },
+      "value": [
+        { "id": "nav_home", "label": "Home", "active": true },
+        { "id": "nav_dining", "label": "Dining", "active": false },
+        { "id": "nav_concierge", "label": "Concierge", "active": false },
+        { "id": "nav_tvguide", "label": "TV Guide", "active": false },
+        { "id": "nav_roomservice", "label": "Room Service", "active": false }
+      ]
+    },
+    "tv_guide": {
+      "type": "collection",
+      "label": "TV Guide Items",
+      "item_schema": {
+        "id": { "type": "text", "label": "ID" },
+        "channel": { "type": "text", "label": "Channel" },
+        "show": { "type": "text", "label": "Show Name" },
+        "time": { "type": "text", "label": "Time/Status" },
+        "is_live": { "type": "boolean", "label": "Is Live" }
+      },
+      "value": [
+        { "id": "tv_001", "channel": "CH 04", "show": "CNN International News", "time": "LIVE", "is_live": true },
+        { "id": "tv_002", "channel": "CH 12", "show": "The Grand Tour", "time": "14:30", "is_live": false },
+        { "id": "tv_003", "channel": "CH 28", "show": "Premier League: Chelsea vs Arsenal", "time": "16:00", "is_live": false }
+      ]
+    },
+    "attractions": {
+      "type": "collection",
+      "label": "Local Attractions",
+      "item_schema": {
+        "id": { "type": "text", "label": "ID" },
+        "name": { "type": "text", "label": "Attraction Name" },
+        "description": { "type": "textarea", "label": "Description" },
+        "image": {
+          "type": "file",
+          "label": "Image",
+          "meta": {
+            "accepted_formats": ["png", "jpg", "webp"],
+            "path": "assets/attractions/"
+          }
+        }
+      },
+      "value": [
+        {
+          "id": "attr_001",
+          "name": "The Louvre Museum",
+          "description": "World's largest art museum, a 10-minute walk.",
+          "image": "assets/attractions/louvre-1775182294641.png"
+        }
+      ]
+    },
+    "restaurants": {
+      "type": "collection",
+      "label": "Nearby Dining",
+      "item_schema": {
+        "id": { "type": "text", "label": "ID" },
+        "name": { "type": "text", "label": "Restaurant Name" },
+        "description": { "type": "textarea", "label": "Description" },
+        "image": {
+          "type": "file",
+          "label": "Image",
+          "meta": {
+            "accepted_formats": ["png", "jpg", "webp"],
+            "path": "assets/restaurants/"
+          }
+        }
+      },
+      "value": [
+        {
+          "id": "rest_001",
+          "name": "L'Ambroisie",
+          "description": "Exquisite 3-Michelin star French cuisine.",
+          "image": "assets/restaurants/lambroisie-1775182315097.png"
+        }
+      ]
+    },
+    "room_service": {
+      "title": {
+        "type": "text",
+        "label": "Title",
+        "value": "Room Service"
+      },
+      "description": {
+        "type": "textarea",
+        "label": "Description",
+        "value": "Craving a midnight snack? View our curated menu."
+      },
+      "cta_text": {
+        "type": "text",
+        "label": "Button Text",
+        "value": "Order Now"
+      },
+      "image": {
+        "type": "file",
+        "label": "Background Image",
+        "value": "assets/room_service-1775182337909.png",
+        "meta": {
+          "accepted_formats": ["png", "jpg", "webp"],
+          "path": "assets/"
+        }
+      }
+    }
+  }
+}
